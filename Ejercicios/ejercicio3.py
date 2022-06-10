@@ -2,6 +2,9 @@
 #Nombre - @Agustina-Bover
 #UNRN Andina- Introducción a la Ingeniería en Computación
 ########
+'''
+Ejercicio 3
+'''
 lista=[]
 contador=10
 while contador>0:

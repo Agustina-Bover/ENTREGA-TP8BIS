@@ -3,7 +3,15 @@
 #UNRN Andina- Introducción a la Ingeniería en Computación
 ########
 #def decomponer():
+'''
+Ejercicio 4
+'''
 def descomponer(numero):
+    '''
+    Esta funcion determina que parte del numero es unidad, decena,
+    centena, unidad ded mil y decena de mil(este ultimo solo en caso
+    de que se cumpla el primer if)
+    '''
     if len(numero)==5:
         unidad=numero[4]
         p_unidad='Unidades:'+unidad
@@ -27,11 +35,17 @@ def descomponer(numero):
         p_unidad_de_mil='Unidades de mil:'+unidad_de_mil
         return p_unidad,p_decena,p_centena,p_unidad_de_mil
 def es_capicua(numero):
+    '''
+    Esta funcion comprueba si el numero es capicual
+    '''
     if numero==numero[::-1]:
         return True
     return False
-        
+
 def principal():
+    '''
+    Parte interactiva del ejercicio
+    '''
     numero=int(input('Ingresar un nro--> '))
     try:
         assert numero>999 and numero<99999
